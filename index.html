@@ -487,6 +487,89 @@ section {
 }
 
 /* ---- TEAM ---- */
+/* ---- SUPPORT / TIP JAR ---- */
+.support {
+  background: linear-gradient(160deg, #001f3f 0%, var(--dark) 45%, var(--primary) 100%);
+  color: #fff;
+  padding: 100px 0;
+}
+.support-card {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.support .section-label {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.14em;
+}
+.support .section-title {
+  color: #fff;
+  margin-bottom: 24px;
+}
+.support-text {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 560px;
+  margin: 0 auto 40px;
+}
+.support-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 32px 18px 22px;
+  border-radius: 18px;
+  background: #00D632;
+  color: #001f0a;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 16px 48px rgba(0, 214, 50, 0.3), 0 0 0 1px rgba(255,255,255,0.08);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.support-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 60px rgba(0, 214, 50, 0.4), 0 0 0 1px rgba(255,255,255,0.12);
+}
+.support-button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #001f0a;
+  color: #00D632;
+  font-size: 26px;
+  font-weight: 900;
+}
+.support-button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+.support-button-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.7;
+}
+.support-button-handle {
+  font-size: 22px;
+  font-weight: 800;
+}
+.support-note {
+  margin-top: 28px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width: 680px) {
+  .support { padding: 72px 0; }
+  .support-button { gap: 14px; padding: 16px 22px 16px 16px; }
+  .support-button-icon { width: 42px; height: 42px; font-size: 22px; }
+  .support-button-handle { font-size: 19px; }
+}
+
 .team {
   background: var(--section-alt);
 }
@@ -728,6 +811,7 @@ footer {
     <li><a href="#story">Story</a></li>
     <li><a href="#values">Values</a></li>
     <li><a href="#team">Team</a></li>
+    <li><a href="#support">Support</a></li>
   </ul>
   <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle navigation">
     <span></span>
@@ -875,6 +959,29 @@ footer {
         <blockquote>"We don't build apps to maximize revenue. We build apps to solve problems we've actually had."</blockquote>
         <cite>Marc Julot, Founder</cite>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT / TIP JAR -->
+<section class="support" id="support">
+  <div class="container">
+    <div class="support-card fade-in">
+      <p class="section-label">Support Nuvia Way</p>
+      <h2 class="section-title">Every app is free. Forever.</h2>
+      <p class="support-text">
+        No paywalls, no subscriptions, no ads, no data sold to third parties.
+        We build these apps because they need to exist, not because they make money.
+        If one of them helped you, a small tip keeps the next one alive.
+      </p>
+      <a class="support-button" href="https://cash.app/$iamlegendarynow" target="_blank" rel="noopener">
+        <span class="support-button-icon">$</span>
+        <span class="support-button-text">
+          <span class="support-button-label">Tip via Cash App</span>
+          <span class="support-button-handle">$iamlegendarynow</span>
+        </span>
+      </a>
+      <p class="support-note">100% of tips go directly to Marc. Nothing is required, nothing is expected.</p>
     </div>
   </div>
 </section>
